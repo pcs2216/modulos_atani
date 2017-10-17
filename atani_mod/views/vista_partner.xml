@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record model="ir.ui.view" id="atani_partner_form_view">
+        <field name="name">atani.partner.form.view</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <field name="phone" position="after">
+                <field name="x_phone2" widget="phone"></field>
+            </field>
+            <xpath expr="//field[@name='parent_id']/.." position="before">
+                <field name="x_nombreComercial" placeholder="Nombre Comercial"></field>
+            </xpath>
+            <xpath expr="//field[@name='type']" position="before">
+                <field name="x_RFC" placeholder="RFC"></field>
+            </xpath>
+        </field>
+    </record>
+</odoo>
