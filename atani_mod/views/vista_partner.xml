@@ -14,6 +14,9 @@
             <xpath expr="//field[@name='type']" position="before">
                 <field name="x_RFC" placeholder="RFC"></field>
             </xpath>
+            <xpath expr="//group[@name='purchase']" position="inside">
+                <field name="x_marcas" widget="many2many_tags" attrs="{ 'invisible':[('supplier','!=',True)] }" />
+            </xpath>
         </field>
     </record>
 </odoo>

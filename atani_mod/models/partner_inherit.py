@@ -11,8 +11,7 @@ class x_Partner(models.Model):
     x_nombreComercial = fields.Char(string='Nombre Comercial')
     x_RFC = fields.Char(string='RFC')
 
-    x_marcas = fields.Many2one('x.model.marcas',
+    x_marcas = fields.Many2many('x.model.marcas',
                                string='Principales marcas que maneja',
                                ondelete='set null',
-                               )
-    
+                               )   
