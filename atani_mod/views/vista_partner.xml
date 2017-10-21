@@ -10,7 +10,7 @@
             </field>
             <xpath expr="//field[@name='parent_id']/.." position="before">
                 <field name="x_nombreComercial" placeholder="Nombre Comercial"></field>
-            </xpath>
+            </xpath>            
             <xpath expr="//field[@name='type']" position="before">
                 <field name="x_RFC" placeholder="RFC"></field>
             </xpath>
