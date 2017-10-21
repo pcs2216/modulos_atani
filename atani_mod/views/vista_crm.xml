@@ -7,7 +7,7 @@
         <field name="arch" type="xml">
             <xpath expr="//field[@name='team_id']" position="after">
                 <field name="x_cuentaPlanos" />
-                <field name="x_planosURL" widget="url" />
+                <field name="x_planosURL" widget="url" attrs="{ 'invisible' :[('x_cuentaPlanos','=',False)] }" />
             </xpath>
         </field>
     </record>
