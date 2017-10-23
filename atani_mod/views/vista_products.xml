@@ -7,7 +7,7 @@
         <field name="arch" type="xml">
             <xpath expr="//field[@name='categ_id']" position="after">
                 <field name="x_marcaProducto" attrs="{ 'invisible':[('type','=','service')] }"></field>
-                <field name="x_colorProducto" attrs="{ 'invisible':[('type','=','service')] }"/>
+                
             </xpath>
         </field>
     </record>

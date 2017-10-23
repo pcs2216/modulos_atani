@@ -13,7 +13,5 @@ class x_Products(models.Model):
         ondelete='set null',
     )
     
-    x_colorProducto = fields.Char(
-        string='Color',
-    )
+    
     

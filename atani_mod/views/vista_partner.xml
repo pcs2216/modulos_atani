@@ -10,12 +10,22 @@
             </field>
             <xpath expr="//field[@name='parent_id']/.." position="before">
                 <field name="x_nombreComercial" placeholder="Nombre Comercial"></field>
-            </xpath>            
-            <xpath expr="//field[@name='type']" position="before">
-                <field name="x_RFC" placeholder="RFC"></field>
             </xpath>
             <xpath expr="//group[@name='purchase']" position="inside">
                 <field name="x_marcas" widget="many2many_tags" attrs="{ 'invisible':[('supplier','!=',True)] }" />
+            </xpath>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="atani_partner_accounting_form_view">
+        <field name="name">atani.partner.accounting.form.view</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="account.view_partner_property_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='property_payment_term_id']" position="attributes">
+                <attribute name="widget"></attribute>
+            </xpath>
+            <xpath expr="//field[@name='property_supplier_payment_term_id']" position="attributes">
+                <attribute name="widget"></attribute>
             </xpath>
         </field>
     </record>

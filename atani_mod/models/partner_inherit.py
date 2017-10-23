@@ -9,7 +9,7 @@ class x_Partner(models.Model):
 
     x_phone2 = fields.Char(string="Teléfono 2")
     x_nombreComercial = fields.Char(string='Nombre Comercial')
-    x_RFC = fields.Char(string='RFC')
+    
 
     x_marcas = fields.Many2many('x.model.marcas',
                                string='Principales marcas que maneja',
