@@ -7,6 +7,10 @@
         <field name="arch" type="xml">
             <xpath expr="//field[@name='categ_id']" position="after">
                 <field name="x_marcaProducto" attrs="{ 'invisible':[('type','=','service')] }"></field>
+            </xpath>
+            <xpath expr="//field[@name='categ_id']" position="attributes">
+                
+                <attribute name="string">Familia</attribute>
                 
             </xpath>
         </field>

@@ -14,4 +14,3 @@ class x_Products(models.Model):
     )
     
     
-    

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record model="ir.actions.act_window" id="marcas_list_action">
+            <field name="name">Marcas</field>
+            <field name="res_model">x.model.marcas</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">Create the first element                </p>
+            </field>
+        </record>
+        <!-- top level menu: no parent //////////////////////////////////////////////////////////////////////////////////////-->
+        
+        <menuitem id="marcas_form" name="Marcas de productos" parent="stock.menu_product_in_config_stock" action="marcas_list_action"/>
+    </data>
+</odoo>

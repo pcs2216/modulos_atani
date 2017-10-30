@@ -25,6 +25,7 @@
         'views/vista_partner.xml',
         'views/vista_products.xml',
         'views/vista_crm.xml',
+        'views/vista_marcas.xml',
         #'views/vista_ssp2.xml',
         #'views/views.xml',
         # 'views/templates.xml',
