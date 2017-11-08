@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Atani Modulos",
+    'name': "Atani Marcas",
 
-    'summary': """Modulos personalizados para Atani""",
+    'summary': """Modulode marcas para Atani""",
 
     'description': """
-        Modificación de vistas y modelos para el proyecto  
+        Modificación de vistas y modelos para el proyecto de atani   
     """,
 
     'author': "soluciones4g",
@@ -18,15 +18,14 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base','sale_crm','account','purchase'],
+    'depends': ['base'],
 
     # always loaded
     'data': [
-        'views/vista_partner.xml',
-        'views/vista_products.xml',
-        'views/vista_crm.xml',        
-        'views/vista_compras.xml',
-        #'security/ir.model.access.csv',
+        
+        'views/vista_marcas.xml',
+        
+        'security/ir.model.access.csv',
         #'views/vista_ssp2.xml',
         #'views/views.xml',
         # 'views/templates.xml',

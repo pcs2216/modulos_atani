@@ -12,9 +12,9 @@
                 <attribute name="string">Familia</attribute>
             </xpath>
             <xpath expr="//field[@name='name']/.." position="replace">
-                
+                <h6>
                     <field name="name" />
-                
+                </h6>
             </xpath>
         </field>
     </record>
