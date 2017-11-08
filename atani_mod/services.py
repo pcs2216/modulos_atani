@@ -3,9 +3,9 @@ import csv
 import functools
 import xmlrpclib
 import base64
-HOST = '172.17.0.2'
+HOST = 'atanipuebla.ddns.me'
 PORT = 8069
-DB = 'Atani_test'
+DB = 'Atani_dev2'
 USER = 'gbarrientos@soluciones4g.com'
 PASS = 'Happy2016*'
 ROOT = 'http://%s:%d/xmlrpc/' % (HOST, PORT)
@@ -46,7 +46,7 @@ data = base64.b64encode(img)
 ids = call('res.partner', 'create',  {'name':'ferras','image':data})
 print "\n partner ids %s" % ids
 """
-ids = call('product.template', 'search_read', [('id','=','2')],['seller_ids'])
+ids = call('product.template', 'search_read', [('id','=','1')],['route_ids'])
 #print "\n partner ids %s" % ids
 for x in ids:
     print x

@@ -1,0 +1,2 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+marcas_access_all,marcas all,model_x_model_marcas,,1,0,0,0

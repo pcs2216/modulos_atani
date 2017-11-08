@@ -9,8 +9,11 @@
                 <field name="x_marcaProducto" attrs="{ 'invisible':[('type','=','service')] }"></field>
             </xpath>
             <xpath expr="//field[@name='categ_id']" position="attributes">
-                
                 <attribute name="string">Familia</attribute>
+            </xpath>
+            <xpath expr="//field[@name='name']/.." position="replace">
+                
+                    <field name="name" />
                 
             </xpath>
         </field>

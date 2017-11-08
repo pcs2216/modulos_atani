@@ -18,7 +18,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base','sale_crm','account'],
+    'depends': ['base','sale_crm','account','purchase'],
 
     # always loaded
     'data': [
@@ -26,6 +26,8 @@
         'views/vista_products.xml',
         'views/vista_crm.xml',
         'views/vista_marcas.xml',
+        'views/vista_compras.xml',
+        'security/ir.model.access.csv',
         #'views/vista_ssp2.xml',
         #'views/views.xml',
         # 'views/templates.xml',
