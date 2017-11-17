@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Atani Modulos",
+    'name': "Atani Reportes",
 
-    'summary': """Modulos personalizados para Atani""",
+    'summary': """Modulo modificacion y creacion de reportes personalizados""",
 
     'description': """
-        Modificación de vistas y modelos para el proyecto  
+        Crear y modificar reportes   
     """,
 
     'author': "soluciones4g",
@@ -18,15 +18,12 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base','sale_crm','account','purchase','marcas','hr'],
+    'depends': ['base','sale'],
 
     # always loaded
     'data': [
-        'views/vista_partner.xml',
-        'views/vista_products.xml',
-        'views/vista_crm.xml',        
-        'views/vista_compras.xml',
-        'views/vista_task.xml',
+        
+        'views/cotizacion_reporte.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data >
+        <record id="x_task_modified" model="ir.ui.view">
+            <field name="name">task.modified.view.kanban</field>
+            <field name="model">project.task</field>
+            <field name="inherit_id" ref="project.view_task_kanban"/>
+            <field name="arch" type="xml">
+                <xpath expr="//templates//field[@name='priority']/.." position="before">
+                    <div>
+                        <field name="progress" widget="gauge" style="width:120px;height:90px;cursor:pointer;">% Tiempo empleado</field>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+        <record id="x_employee_modified" model="ir.ui.view">
+            <field name="name">employee.modified.view.form</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr_contract.hr_hr_employee_view_form2"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='vehicle_distance']" position="replace">
+                    
+                    <field name="x_tiempoCasaTrabajo" widget="float_time"></field>
+                    
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
