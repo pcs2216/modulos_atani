@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record model="ir.ui.view" id="atani_stock_form_view">
+        <field name="name">atani.stock.form.view</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='origin']" position="after">
+                <field name="x_responsable" attrs="{ 'invisible':[('picking_type_id','not in',4)] }" help="Empleado al cual se hace entrega del material"></field>
+            </xpath>
+        </field>
+    </record>
+</odoo>

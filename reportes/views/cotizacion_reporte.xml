@@ -6,14 +6,18 @@
                 <tr style="background-color:lightgray;">
                     <th>Description</th>
                     <th class="text-right">Cantidad</th>
-                    <!--th class="text-right">Precio Unitario</th-->
+                    <th class="text-right">Precio Unitario</th>
                     <th class="text-right">Precio Total</th>
                 </tr>
             </xpath>
             <xpath expr="//tbody[@class='sale_tbody']//tr//td[5]" position="replace"></xpath>
             <xpath expr="//tbody[@class='sale_tbody']//tr//td[4]" position="replace"></xpath>
-            <xpath expr="//tbody[@class='sale_tbody']//tr//td[3]" position="replace"></xpath>
-            
+            <xpath expr="//tbody[@class='sale_tbody']//tr//td[3]" position="replace">
+                <td class="text-right">
+                    <!--span t-field="l.price_unit"/-->
+                    <span t-esc="'{:,.2f}'.format(l.price_unit * 1.16)"/>
+                </td>
+            </xpath>
             <xpath expr="//div[@name='total']//table" position="replace">
                 <table class="table table-condensed">
                     <tr class="border-black">
